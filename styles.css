@@ -123,6 +123,9 @@ body {
     min-width: 100%;
     min-height: 100vh;
     font-family: hellix;
+    color: #111235;
+    background: linear-gradient(7.28deg, #eef5ff 0%, #ffffff 99.69%);
+
 }
 
 h1,
@@ -315,8 +318,38 @@ p {
     line-height: 28px;
 }
 
-.footer-menu li {
+ul {
+    padding-left: 0;
+    /* padding: 20px; */
+}
+
+ul li {
+    list-style-type: none;
     padding: 14px;
+}
+
+.email-submission {
+    width: 250px;
+    margin: 20px auto;
+    background: white;
+    padding: 0px 10px;
+    border-radius: 8px;
+}
+
+input[type="email"] {
+    width: 55%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 400;
+    font-family: hellix;
+    background: url("https://assets.codepen.io/6060109/icon-send.png") white 95% 50% no-repeat;
+    /*   background shorthand for place an image inside an input */
+}
+
+input[type="email"]::placeholder {
+    color: #111235;
 }
 
 .social-media-links {
@@ -360,6 +393,11 @@ a {
 .border-top {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+.bm-15 {
+    margin-bottom: 15px;
+}
+
 
 /* Start leaving notes for each class  */
 /* make global margin and padding classes  */
