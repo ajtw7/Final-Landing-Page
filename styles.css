@@ -114,7 +114,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 
 }
 
@@ -402,6 +402,20 @@ a {
     margin-bottom: 15px;
 }
 
+.desktop-only h2:nth-of-type(1) {
+    display: none;
+}
+
+/* 
+.mobile-only h2:nth-of-type(2) {
+    display: block;
+    /* meant to remove the mobile version of "The Benefits of Exercise" h2 
+
+} */
+
+.desktop-only a:nth-of-type(1) {
+    display: none;
+}
 
 /* Start leaving notes for each class  */
 /* make global margin and padding classes  */
@@ -489,15 +503,20 @@ a {
 
     .page-three .inner-content-container {
         flex-direction: row-reverse;
-        /* justify-content: center; */
+        align-content: center;
         text-align: left;
     }
 
     .page-three .inner-content-desktop-container {
-        width: 50%;
+        width: 40%;
         padding: 10px;
         justify-content: center;
         margin: 0px 15;
+        padding: 0 80px;
+    }
+
+    .page-three .inner-content-container img {
+        width: 40%;
     }
 
     .page-three p {
@@ -508,8 +527,68 @@ a {
         margin: 0 12px;
     }
 
-    .btn {
-        text-align: center;
+    .page-four {
+        display: flex
     }
 
+    .btn {
+        text-align: center;
+        margin: 35px 0;
+    }
+
+    .desktop-only h2:nth-of-type(1) {
+        display: block;
+    }
+
+    .mobile-only h2:nth-of-type(2) {
+        display: none;
+        /* meant to remove the mobile version of "The Benefits of Exercise" h2 */
+    }
+
+    .desktop-only a:nth-of-type(1) {
+        display: block;
+    }
+
+    .mobile-only a:nth-of-type(2) {
+        display: none;
+        /* meant to remove the mobile version of "The Benefits of Exercise" anchor */
+    }
+
+    .img-info-box-container h2:nth-of-type(1) {
+        display: none
+    }
+
+    .img-info-box-container a:nth-of-type(1) {
+        display: none
+    }
+
+
+    .info-box {
+        max-width: 370px;
+    }
+
+    .soft-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-info-box-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .info-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 50%;
+    }
+
+    .four-and-footer {
+        max-width: 1350px;
+        margin: auto;
+
+    }
 }
