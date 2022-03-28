@@ -564,7 +564,7 @@ a {
 
 
     .info-box {
-        max-width: 370px;
+        width: 45%;
     }
 
     .soft-flex {
@@ -588,7 +588,46 @@ a {
 
     .four-and-footer {
         max-width: 1350px;
-        margin: auto;
+        margin: 0 auto;
 
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        height: auto;
+        padding: 0;
+    }
+
+    .footer>h3 {
+        text-align: left;
+    }
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-around;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        width: 30%;
+        height: 150px;
+        /* background: #436baa; */
+    }
+
+    .stay-up-to-date {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .social-media-links {
+        display: none;
+    }
+
+    #copyright {
+        text-align: left;
+        margin: -50px 82px 40px;
     }
 }
